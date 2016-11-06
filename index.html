@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Interactive Tutor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type='text/css' rel='stylesheet' href='stylesheet.css'/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<img src='background3.jpg' style='position:fixed;opacity:0.2;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
+	
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="index.html">Home</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="test1.html">QUIZ-NUMBERS</a></li>
+			<li><a href="teach1.html">NUMBER-LINE</a></li>
+			<li><a href="test2.html">QUIZ-SUBTRACTION</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+	<div class="header">
+		<h1>Interactive Tutor</h1>	
+		<h3>Nurturing tomorrow's Math Wizards</h3>	
+	</div>
+	<hr>
+	<div class="content">
+		<input type="text" class="form-control" id="usr" placeholder="-------------- Type your query here --------------">
+		<br>
+		<button id="action" type="button" class="btn btn-primary">Submit</button>
+		<br><br>OR<br><br>
+		<a href="test1.html">
+			<button type="button" class="btn btn-success">Click here to start off with an easy quiz on numbers</button>
+		</a>
+	</div>
+	
+	<div id="myModal" class="modal">
+		<div class="modal-content" id="dialog">
+			<span class="close">x</span>
+		</div>
+	</div>
+
+	<script type='text/javascript' src='jsteach2.js'></script>
+	
+</body>
+
+</html>

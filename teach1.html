@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Interactive Tutor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type='text/css' rel='stylesheet' href='cssteach1.css'/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+	<script type='text/javascript' src='jsteach1.js'></script>
+</head>
+
+<body>
+	<img src='background3.jpg' style='position:fixed;opacity:0.4;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
+
+	<canvas id="canvas"></canvas>
+    <div class="form-container-container">
+		
+		<form class="form-container" id="form1">
+		  <div>
+			<div class="right">
+			  <div class="form-title">Range End</div>
+			  <input type='button' value='-' class='decrement' field='rangeend' />
+			  <input class="form-field" type="number" id="rangeend" value="30"  />
+			  <input type='button' value='+' class='increment' field='rangeend' />
+			  <br />
+			</div>
+			<div class="form-title">Range Start</div>
+			  <input type='button' value='-' class='decrement' field='rangestart' />
+			<input class="form-field" type="number" id="rangestart" value="0"  />
+			<input type='button' value='+' class='increment' field='rangestart' />
+			<br />
+		  </div>
+		  <div>
+			<div class="right">
+			  <div class="form-title">Modifier</div>
+			  <input type='button' value='-' class='decrement' field='modifier' />
+			  <input class="form-field" type="number" id="modifier" value="0"  />
+			  <input type='button' value='+' class='increment' field='modifier' />
+			  <br />
+			</div>
+			<div class="form-title">Base Number</div>
+			<input type='button' value='-' class='decrement' field='start' />
+			<input class="form-field" type="number" id="start" value="0"  />
+			<input type='button' value='+' class='increment' field='start' />
+			<br />
+		  </div>
+		</form>
+		  
+		<form class="form-container" id="form2">
+			<div class="form-title">Operation</div>
+			<select class="form-field" id="operation" />
+				<option value="-">Subtraction</option>
+				<option value="+">Addition</option>
+				<!--option value="*">* multiply</option>
+				<option value="/">/ divide</option-->
+			</select>
+			<div class="submit-container right">
+			  <input class="submit-button" type="button" value="Calculate" onclick="renderCanvas();" />
+			</div>
+			<div class="exit-num-line">
+			  <br/>
+			  <a href="teach2.html">
+				<input class="submit-button" type="button" value="Exit number line"/>
+			  </a>
+			</div>
+		</form>
+		
+    </div>
+	
+</body>
+
+</html>

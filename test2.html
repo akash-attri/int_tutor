@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Interactive Tutor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type='text/css' rel='stylesheet' href='stylesheet.css'/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<img src='background3.jpg' style='position:fixed;opacity:0.2;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
+	
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="index.html">Home</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="test1.html">QUIZ-NUMBERS</a></li>
+			<li><a href="teach1.html">NUMBER-LINE</a></li>
+			<li><a href="test2.html">QUIZ-SUBTRACTION</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	
+	<div class='header'>
+		<h1>Can you subtract ?</h1>
+	</div>
+	<hr>
+	<div class='quizSpace'>
+		<div id='quiz'></div>
+		<hr>
+		<button type="button" class="btn btn-primary" id="next">Next</button>
+		<button type="button" class="btn btn-primary" id="prev">Previous</button><br>
+		<button type="button" class="btn btn-success" id="start">Retest of subtraction</button>
+	</div>
+
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+	<script type='text/javascript' src='jsquiz2.js'></script>
+</body>
+
+</html>
